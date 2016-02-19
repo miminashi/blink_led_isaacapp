@@ -14,6 +14,6 @@ while True:
     time.sleep(0.1)
 
     gpio.write(0)
-    time.sleep(0.9)
+    time.sleep(0.5)
 
 gpio.dir(mraa.DIR_IN)
