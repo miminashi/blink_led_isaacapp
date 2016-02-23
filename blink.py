@@ -6,7 +6,7 @@ import time
 
 print("Hello mraa\nVersion: %s" % mraa.getVersion())
 
-gpio = mraa.Gpio(9)
+gpio = mraa.Gpio(13)
 gpio.dir(mraa.DIR_OUT)
 
 while True:
@@ -14,6 +14,6 @@ while True:
     time.sleep(0.1)
 
     gpio.write(0)
-    time.sleep(0.5)
+    time.sleep(0.9)
 
 gpio.dir(mraa.DIR_IN)
