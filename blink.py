@@ -10,11 +10,10 @@ gpio = mraa.Gpio(13)
 gpio.dir(mraa.DIR_OUT)
 
 while True:
-    #gpio.write(1)
-    #time.sleep(0.1)
+    gpio.write(1)
+    time.sleep(0.1)
 
-    #gpio.write(0)
-    #time.sleep(0.9)
-    pass
+    gpio.write(0)
+    time.sleep(0.9)
 
 gpio.dir(mraa.DIR_IN)
